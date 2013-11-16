@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49C7AE16183817F3009920FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE15183817F3009920FA /* Foundation.framework */; };
+		49C7AE18183817F3009920FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE17183817F3009920FA /* CoreGraphics.framework */; };
+		49C7AE1A183817F3009920FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE19183817F3009920FA /* UIKit.framework */; };
+		49C7AE20183817F3009920FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49C7AE1E183817F3009920FA /* InfoPlist.strings */; };
+		49C7AE22183817F3009920FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE21183817F3009920FA /* main.m */; };
+		49C7AE26183817F3009920FA /* CONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE25183817F3009920FA /* CONAppDelegate.m */; };
+		49C7AE29183817F3009920FA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C7AE27183817F3009920FA /* Main_iPhone.storyboard */; };
+		49C7AE2C183817F3009920FA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C7AE2A183817F3009920FA /* Main_iPad.storyboard */; };
+		49C7AE2F183817F3009920FA /* CONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE2E183817F3009920FA /* CONViewController.m */; };
+		49C7AE31183817F3009920FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C7AE30183817F3009920FA /* Images.xcassets */; };
+		49C7AE38183817F3009920FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE37183817F3009920FA /* XCTest.framework */; };
+		49C7AE39183817F3009920FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE15183817F3009920FA /* Foundation.framework */; };
+		49C7AE3A183817F3009920FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE19183817F3009920FA /* UIKit.framework */; };
+		49C7AE42183817F3009920FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49C7AE40183817F3009920FA /* InfoPlist.strings */; };
+		49C7AE44183817F3009920FA /* PlushClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE43183817F3009920FA /* PlushClientTests.m */; };
+		49C7AE561838182B009920FA /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE4E1838182B009920FA /* AsyncSocket.m */; };
+		49C7AE571838182B009920FA /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE501838182B009920FA /* AsyncUdpSocket.m */; };
+		49C7AE581838182B009920FA /* NetAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE521838182B009920FA /* NetAssociation.m */; };
+		49C7AE591838182B009920FA /* NetworkClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE541838182B009920FA /* NetworkClock.m */; };
+		49C7AE5A1838182B009920FA /* ntp.hosts in Resources */ = {isa = PBXBuildFile; fileRef = 49C7AE551838182B009920FA /* ntp.hosts */; };
+		49C7AE61183818A0009920FA /* CONApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE5F183818A0009920FA /* CONApiClient.m */; };
+		49C7AE64183818BA009920FA /* Base64Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE62183818BA009920FA /* Base64Utilities.m */; };
+		49C7AE68183818D7009920FA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE66183818D7009920FA /* Reachability.m */; };
+		49C7AE6B18381C86009920FA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7AE6A18381C86009920FA /* Crashlytics.framework */; };
+		49C7AE6E18381D7B009920FA /* plush-client.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49C7AE6C18381D7B009920FA /* plush-client.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49C7AE3B183817F3009920FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49C7AE0A183817F3009920FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49C7AE11183817F3009920FA;
+			remoteInfo = PlushClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49C7AE12183817F3009920FA /* PlushClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlushClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C7AE15183817F3009920FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49C7AE17183817F3009920FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49C7AE19183817F3009920FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49C7AE1D183817F3009920FA /* PlushClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlushClient-Info.plist"; sourceTree = "<group>"; };
+		49C7AE1F183817F3009920FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49C7AE21183817F3009920FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49C7AE23183817F3009920FA /* PlushClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlushClient-Prefix.pch"; sourceTree = "<group>"; };
+		49C7AE24183817F3009920FA /* CONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONAppDelegate.h; sourceTree = "<group>"; };
+		49C7AE25183817F3009920FA /* CONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONAppDelegate.m; sourceTree = "<group>"; };
+		49C7AE28183817F3009920FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		49C7AE2B183817F3009920FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		49C7AE2D183817F3009920FA /* CONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONViewController.h; sourceTree = "<group>"; };
+		49C7AE2E183817F3009920FA /* CONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CONViewController.m; sourceTree = "<group>"; };
+		49C7AE30183817F3009920FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49C7AE36183817F3009920FA /* PlushClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlushClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C7AE37183817F3009920FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		49C7AE3F183817F3009920FA /* PlushClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlushClientTests-Info.plist"; sourceTree = "<group>"; };
+		49C7AE41183817F3009920FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49C7AE43183817F3009920FA /* PlushClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlushClientTests.m; sourceTree = "<group>"; };
+		49C7AE4D1838182B009920FA /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		49C7AE4E1838182B009920FA /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		49C7AE4F1838182B009920FA /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		49C7AE501838182B009920FA /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		49C7AE511838182B009920FA /* NetAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetAssociation.h; sourceTree = "<group>"; };
+		49C7AE521838182B009920FA /* NetAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetAssociation.m; sourceTree = "<group>"; };
+		49C7AE531838182B009920FA /* NetworkClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClock.h; sourceTree = "<group>"; };
+		49C7AE541838182B009920FA /* NetworkClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClock.m; sourceTree = "<group>"; };
+		49C7AE551838182B009920FA /* ntp.hosts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ntp.hosts; sourceTree = "<group>"; };
+		49C7AE5F183818A0009920FA /* CONApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CONApiClient.m; sourceTree = "<group>"; };
+		49C7AE60183818A0009920FA /* CONApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CONApiClient.h; sourceTree = "<group>"; };
+		49C7AE62183818BA009920FA /* Base64Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Utilities.m; sourceTree = "<group>"; };
+		49C7AE63183818BA009920FA /* Base64Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Utilities.h; sourceTree = "<group>"; };
+		49C7AE66183818D7009920FA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		49C7AE67183818D7009920FA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		49C7AE6A18381C86009920FA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		49C7AE6D18381D7B009920FA /* plush-client.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "plush-client.xcdatamodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49C7AE0F183817F3009920FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7AE18183817F3009920FA /* CoreGraphics.framework in Frameworks */,
+				49C7AE1A183817F3009920FA /* UIKit.framework in Frameworks */,
+				49C7AE6B18381C86009920FA /* Crashlytics.framework in Frameworks */,
+				49C7AE16183817F3009920FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C7AE33183817F3009920FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7AE38183817F3009920FA /* XCTest.framework in Frameworks */,
+				49C7AE3A183817F3009920FA /* UIKit.framework in Frameworks */,
+				49C7AE39183817F3009920FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49C7AE09183817F3009920FA = {
+			isa = PBXGroup;
+			children = (
+				49C7AE65183818BE009920FA /* Reachability */,
+				49C7AE5E1838187D009920FA /* API */,
+				49C7AE5D1838186B009920FA /* Resources */,
+				49C7AE5C18381848009920FA /* NTP */,
+				49C7AE5B1838182F009920FA /* CocoaAsyncSockets */,
+				49C7AE1B183817F3009920FA /* PlushClient */,
+				49C7AE3D183817F3009920FA /* PlushClientTests */,
+				49C7AE14183817F3009920FA /* Frameworks */,
+				49C7AE13183817F3009920FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49C7AE13183817F3009920FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE12183817F3009920FA /* PlushClient.app */,
+				49C7AE36183817F3009920FA /* PlushClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49C7AE14183817F3009920FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE6A18381C86009920FA /* Crashlytics.framework */,
+				49C7AE15183817F3009920FA /* Foundation.framework */,
+				49C7AE17183817F3009920FA /* CoreGraphics.framework */,
+				49C7AE19183817F3009920FA /* UIKit.framework */,
+				49C7AE37183817F3009920FA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49C7AE1B183817F3009920FA /* PlushClient */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE24183817F3009920FA /* CONAppDelegate.h */,
+				49C7AE25183817F3009920FA /* CONAppDelegate.m */,
+				49C7AE27183817F3009920FA /* Main_iPhone.storyboard */,
+				49C7AE2A183817F3009920FA /* Main_iPad.storyboard */,
+				49C7AE2D183817F3009920FA /* CONViewController.h */,
+				49C7AE2E183817F3009920FA /* CONViewController.m */,
+				49C7AE30183817F3009920FA /* Images.xcassets */,
+				49C7AE1C183817F3009920FA /* Supporting Files */,
+				49C7AE6C18381D7B009920FA /* plush-client.xcdatamodeld */,
+			);
+			path = PlushClient;
+			sourceTree = "<group>";
+		};
+		49C7AE1C183817F3009920FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE1D183817F3009920FA /* PlushClient-Info.plist */,
+				49C7AE1E183817F3009920FA /* InfoPlist.strings */,
+				49C7AE21183817F3009920FA /* main.m */,
+				49C7AE23183817F3009920FA /* PlushClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49C7AE3D183817F3009920FA /* PlushClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE43183817F3009920FA /* PlushClientTests.m */,
+				49C7AE3E183817F3009920FA /* Supporting Files */,
+			);
+			path = PlushClientTests;
+			sourceTree = "<group>";
+		};
+		49C7AE3E183817F3009920FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE3F183817F3009920FA /* PlushClientTests-Info.plist */,
+				49C7AE40183817F3009920FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49C7AE5B1838182F009920FA /* CocoaAsyncSockets */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE4D1838182B009920FA /* AsyncSocket.h */,
+				49C7AE4E1838182B009920FA /* AsyncSocket.m */,
+				49C7AE4F1838182B009920FA /* AsyncUdpSocket.h */,
+				49C7AE501838182B009920FA /* AsyncUdpSocket.m */,
+			);
+			name = CocoaAsyncSockets;
+			sourceTree = "<group>";
+		};
+		49C7AE5C18381848009920FA /* NTP */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE511838182B009920FA /* NetAssociation.h */,
+				49C7AE521838182B009920FA /* NetAssociation.m */,
+				49C7AE531838182B009920FA /* NetworkClock.h */,
+				49C7AE541838182B009920FA /* NetworkClock.m */,
+			);
+			name = NTP;
+			sourceTree = "<group>";
+		};
+		49C7AE5D1838186B009920FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE551838182B009920FA /* ntp.hosts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		49C7AE5E1838187D009920FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE62183818BA009920FA /* Base64Utilities.m */,
+				49C7AE63183818BA009920FA /* Base64Utilities.h */,
+				49C7AE5F183818A0009920FA /* CONApiClient.m */,
+				49C7AE60183818A0009920FA /* CONApiClient.h */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		49C7AE65183818BE009920FA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				49C7AE66183818D7009920FA /* Reachability.m */,
+				49C7AE67183818D7009920FA /* Reachability.h */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49C7AE11183817F3009920FA /* PlushClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C7AE47183817F3009920FA /* Build configuration list for PBXNativeTarget "PlushClient" */;
+			buildPhases = (
+				49C7AE0E183817F3009920FA /* Sources */,
+				49C7AE0F183817F3009920FA /* Frameworks */,
+				49C7AE10183817F3009920FA /* Resources */,
+				49C7AE6918381BA3009920FA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlushClient;
+			productName = PlushClient;
+			productReference = 49C7AE12183817F3009920FA /* PlushClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49C7AE35183817F3009920FA /* PlushClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C7AE4A183817F3009920FA /* Build configuration list for PBXNativeTarget "PlushClientTests" */;
+			buildPhases = (
+				49C7AE32183817F3009920FA /* Sources */,
+				49C7AE33183817F3009920FA /* Frameworks */,
+				49C7AE34183817F3009920FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49C7AE3C183817F3009920FA /* PBXTargetDependency */,
+			);
+			name = PlushClientTests;
+			productName = PlushClientTests;
+			productReference = 49C7AE36183817F3009920FA /* PlushClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49C7AE0A183817F3009920FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CON;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Sergio Artero Martinez";
+				TargetAttributes = {
+					49C7AE35183817F3009920FA = {
+						TestTargetID = 49C7AE11183817F3009920FA;
+					};
+				};
+			};
+			buildConfigurationList = 49C7AE0D183817F3009920FA /* Build configuration list for PBXProject "PlushClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49C7AE09183817F3009920FA;
+			productRefGroup = 49C7AE13183817F3009920FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49C7AE11183817F3009920FA /* PlushClient */,
+				49C7AE35183817F3009920FA /* PlushClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49C7AE10183817F3009920FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7AE5A1838182B009920FA /* ntp.hosts in Resources */,
+				49C7AE2C183817F3009920FA /* Main_iPad.storyboard in Resources */,
+				49C7AE31183817F3009920FA /* Images.xcassets in Resources */,
+				49C7AE29183817F3009920FA /* Main_iPhone.storyboard in Resources */,
+				49C7AE20183817F3009920FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C7AE34183817F3009920FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7AE42183817F3009920FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49C7AE6918381BA3009920FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run f519d380eede405be6309521dcb13f7e97f4ad35";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49C7AE0E183817F3009920FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7AE591838182B009920FA /* NetworkClock.m in Sources */,
+				49C7AE22183817F3009920FA /* main.m in Sources */,
+				49C7AE61183818A0009920FA /* CONApiClient.m in Sources */,
+				49C7AE571838182B009920FA /* AsyncUdpSocket.m in Sources */,
+				49C7AE68183818D7009920FA /* Reachability.m in Sources */,
+				49C7AE6E18381D7B009920FA /* plush-client.xcdatamodeld in Sources */,
+				49C7AE26183817F3009920FA /* CONAppDelegate.m in Sources */,
+				49C7AE2F183817F3009920FA /* CONViewController.m in Sources */,
+				49C7AE561838182B009920FA /* AsyncSocket.m in Sources */,
+				49C7AE64183818BA009920FA /* Base64Utilities.m in Sources */,
+				49C7AE581838182B009920FA /* NetAssociation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C7AE32183817F3009920FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7AE44183817F3009920FA /* PlushClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49C7AE3C183817F3009920FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49C7AE11183817F3009920FA /* PlushClient */;
+			targetProxy = 49C7AE3B183817F3009920FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49C7AE1E183817F3009920FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C7AE1F183817F3009920FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		49C7AE27183817F3009920FA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C7AE28183817F3009920FA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		49C7AE2A183817F3009920FA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C7AE2B183817F3009920FA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		49C7AE40183817F3009920FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C7AE41183817F3009920FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49C7AE45183817F3009920FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49C7AE46183817F3009920FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49C7AE48183817F3009920FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sergioa/Documents/workspace/git/ios/plush-ios-client/PlushClient",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlushClient/PlushClient-Prefix.pch";
+				INFOPLIST_FILE = "PlushClient/PlushClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49C7AE49183817F3009920FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sergioa/Documents/workspace/git/ios/plush-ios-client/PlushClient",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlushClient/PlushClient-Prefix.pch";
+				INFOPLIST_FILE = "PlushClient/PlushClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		49C7AE4B183817F3009920FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlushClient.app/PlushClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlushClient/PlushClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PlushClientTests/PlushClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		49C7AE4C183817F3009920FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PlushClient.app/PlushClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlushClient/PlushClient-Prefix.pch";
+				INFOPLIST_FILE = "PlushClientTests/PlushClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49C7AE0D183817F3009920FA /* Build configuration list for PBXProject "PlushClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C7AE45183817F3009920FA /* Debug */,
+				49C7AE46183817F3009920FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C7AE47183817F3009920FA /* Build configuration list for PBXNativeTarget "PlushClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C7AE48183817F3009920FA /* Debug */,
+				49C7AE49183817F3009920FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49C7AE4A183817F3009920FA /* Build configuration list for PBXNativeTarget "PlushClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C7AE4B183817F3009920FA /* Debug */,
+				49C7AE4C183817F3009920FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		49C7AE6C18381D7B009920FA /* plush-client.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49C7AE6D18381D7B009920FA /* plush-client.xcdatamodel */,
+			);
+			currentVersion = 49C7AE6D18381D7B009920FA /* plush-client.xcdatamodel */;
+			path = "plush-client.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 49C7AE0A183817F3009920FA /* Project object */;
+}
