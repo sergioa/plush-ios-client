@@ -289,6 +289,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Sergio Artero Martinez";
 				TargetAttributes = {
+					49C7AE11183817F3009920FA = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					49C7AE35183817F3009920FA = {
 						TestTargetID = 49C7AE11183817F3009920FA;
 					};
@@ -504,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergio  Artero (PSNSWD97MZ)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/sergioa/Documents/workspace/git/ios/plush-ios-client/PlushClient",
@@ -512,6 +520,7 @@
 				GCC_PREFIX_HEADER = "PlushClient/PlushClient-Prefix.pch";
 				INFOPLIST_FILE = "PlushClient/PlushClient-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CBE07268-79D8-4EF8-AF79-7415E9EC4CC2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -529,6 +538,7 @@
 				GCC_PREFIX_HEADER = "PlushClient/PlushClient-Prefix.pch";
 				INFOPLIST_FILE = "PlushClient/PlushClient-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CBE07268-79D8-4EF8-AF79-7415E9EC4CC2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
