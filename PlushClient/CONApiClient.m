@@ -12,7 +12,7 @@
 
 #define ROOT_PATH @"http://plush.juandebravo.com/api"
 #define DEVICE_TOKEN_URI @"/device_tokens/%@"
-#define SEND_PUSH_URI @"push"
+#define SEND_PUSH_URI @"/push"
 #define BROADCAST_PUSH_URI @"broadcast"
 
 #ifdef  DEBUG
@@ -23,8 +23,6 @@
 #define APP_SECRET @"I5sW94fudtH9JEuFTfjEAz"
 #endif
 
-
-#define USER_AGENT_HEADER @"User-Agent"
 #define ACCEPT_HEADER @"Accept"
 #define ACCEPT_APPLICATION_JSON @"application/json"
 
@@ -47,11 +45,21 @@
          andCompletionBlock:completion];
 }
 
-+ (void)unpublishPushToken:(NSString *)pushToken withCompletionBlock:(requestCompletionBlock)completion
++ (void)revokePushToken:(NSString *)pushToken withCompletionBlock:(requestCompletionBlock)completion
 {
     [self sendRequestToPath:[NSString stringWithFormat:DEVICE_TOKEN_URI, pushToken]
                 usingMethod:@"DELETE"
              withBinaryData:nil
+         andCompletionBlock:completion];
+}
+
++ (void)triggerRemotePushWithToken:(NSString *)pushToken andCompletionBlock:(requestCompletionBlock)completion
+{
+    NSString *data = [NSString stringWithFormat:@"{\"device_tokens\": [\"%@\"], \"aps\": {\"alert\": \"hello world!\"}", pushToken];
+    
+    [self sendRequestToPath:SEND_PUSH_URI
+                usingMethod:@"POST"
+             withBinaryData:[data dataUsingEncoding:NSUTF8StringEncoding]
          andCompletionBlock:completion];
 }
 

@@ -29,9 +29,12 @@ typedef void (^requestCompletionBlock)(CONApiRequestError success, NSData *respo
 
 
 + (void)publishPushToken:(NSString *)pushToken withCompletionBlock:(requestCompletionBlock)completion;
++ (void)revokePushToken:(NSString *)pushToken withCompletionBlock:(requestCompletionBlock)completion;
++ (void)triggerRemotePushWithToken:(NSString *)pushToken andCompletionBlock:(requestCompletionBlock)completion;
 + (void)acknowledgePushReceptionWithCorrelationId:(NSString *)guid
                                        withBearer:(NSString *)bearer
                                      andTimestamp:(NSTimeInterval)timestamp
                               withCompletionBlock:(requestCompletionBlock)completion;
+
 
 @end
